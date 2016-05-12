@@ -1,0 +1,43 @@
+Working on Knowledge Space ...
+
+
+
+NBER DATA :
+---------
+
+816_target_gvkeys.csv contained 816 target companies with corresponding gvkeys
+
+code1.py :
+
+(1) From DYNASS.csv file extracted corresponding final gvkeys of each row
+(2) Separated rows with negative pdpass(58) and their corresponding final gvkeys into negDYNASS.csv file
+(3) Created fnlDYNASS.csv file which contains all pdpass and their corresponding final gvkeys.
+(4) This wasn't much useful as we could only generate assignees for 270 companies outof 816
+
+code2.py :
+
+(1) For 816 targetted companies compared their gvkeys with gvkeys in DYNASS.csv gvkey5 --- gvkey1(5 else 4 ... 1) and took the 		      corresponding gvkey and mapped to respective pdpass(removing duplicate values) and created 816_target_gvkeys_assgn_525.csv file.
+(2) Finally generated assignees for 525 targetted companies out of 816
+(3) Some companies had multiple assignees.
+
+code3.py :
+
+(1) For 270 targetted companies out of 816 generated in code1.py from final gvkeys mapped to their corresponding assignees and     created 816_target_gvkeys_assgn_270.csv file
+
+code4.py :
+
+(1) For 525 targetted companies out of 816 generated in code2.py corresponding patents from PAT76_06_assg.csv have been generated, created 816_assgn_patent.csv file(each company -> multiple assignees and each each assignee -> multiple patents) and their patent counts.
+
+code5.py :
+
+(1) From 816_target_gvkeys_assgn_525.csv generated in code2.py the data has been expanded vertically with each pdpasignee in each row.
+(2) By Finding the assignee count for each row and expanding each row with its respective assignee count and finally replacing pdpassgn column (list of lists) with a single list, generated the file 816_target_gvkeys_assgn__expand_525.csv .
+
+code6.py :
+
+(1) Now taking the 816_target_gvkeys_assgn__expand_525.csv generated in code5.py for each pdpassgn respective list of patents have been generated as in code4.py and created file 816_assign_patent_expand.csv .
+
+code7.py :
+
+(1) Now for the 816_assign_patent_expand.csv file generated in code6.py above, generated the 816_assign_patent_expand_final.csv file which contains company with single pdpassgn and single patent in each row as done in code5.py for genrating assignees in each row.
+(2) Finally, we have the list of all 816 companies with all possible assignees and respective patents expanded vertically.(which could be used to get citations for each patent in next step.)
