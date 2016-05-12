@@ -66,3 +66,25 @@ code7.py :
 
 (1) Now for the 816_assign_patent_expand.csv file generated in code6.py above, generated the 816_assign_patent_expand_final.csv file which contains company with single pdpassgn and single patent in each row as done in code5.py for genrating assignees in each row.
 (2) Finally, we have the list of all 816 companies with all possible assignees and respective patents expanded vertically.(which could be used to get citations for each patent in next step.)
+
+
+NBER Acquirer:
+---------------
+
+code8.py :
+
+(1) Similar to code2.py Acquirer_Assignees.csv has been created, corresponding assignees have been created for all gvkeys.
+
+code9.py :
+
+(1) Assignees have been expanded vertically as done in code5.py, created Acquirer_Assignees_Expand.csv.
+
+code10.py :
+
+(1) From the above file corresponding patents and their counts have been extracted as done in code6.py.
+(2) Created the file Acquirer_Assignees_Patent_Expand.csv.
+
+code11.py :
+
+(1) Now from the above generated file patents have been expanded vertically similar to code7.py.
+(2) Finally, Acquirer_Assignees_Patent_Expand_Final.csv has been generated which contains list of all Acquirer companies with respective assignees and patents.
