@@ -1,0 +1,817 @@
+,gvkey,deal year,Target name,pdpassgn_525
+0,2598,1999,Cade Industries Inc,
+1,2846,1999,Centocor Inc,[11106252]
+2,3172,1999,Collagen Aesthetics Inc,[10449026]
+3,3736,1999,Daniel Industries Inc,"[10234288, 11309258, 10770733, 10686534]"
+4,3760,1999,Data General Corp,"[10179826, 10456531, 11011287]"
+5,5063,1999,General Instrument Corp,"[10572595, 10430930, 10465331, 10621891]"
+6,5693,1999,Honeywell Inc,
+7,5846,1999,Andataco Inc,
+8,6638,1999,Carleton Corp,
+9,6876,1999,M/A/R/C Group,[12129174]
+10,7049,1999,Market Facts Inc,
+11,7640,1999,Mylex Corp,[11975457]
+12,8163,1999,Optical Coating Laboratory Inc,[10081562]
+13,8960,1999,Raychem Corp,[10837600]
+14,9120,1999,RIBI ImmunoChem Research Inc,[10763306]
+15,10010,1999,Stanford Telecommunications Inc,"[11244642, 11915046]"
+16,10163,1999,Sundstrand Corp,"[11067936, 10598849, 11128220, 10189623]"
+17,11040,1999,Pharmacia & Upjohn Inc,
+18,11058,1999,V Band Corp,[11189937]
+19,11288,1999,Warner-Lambert Co,[11814518]
+20,11803,1999,DSP Technology Inc,
+21,12537,1999,Market Guide Inc,
+22,13096,1999,Nichols Research Corp,[11990095]
+23,13308,1999,Agouron Pharmaceuticals Inc,[11814518]
+24,13315,1999,Sequent Computer Systems Inc,[11933337]
+25,14160,1999,EMCON,[11584279]
+26,16419,1999,Brite Voice Systems Inc,[12313956]
+27,17764,1999,US Bioscience Inc,[11057481]
+28,20192,1999,Roberts Pharmaceutical Corp,
+29,20903,1999,PulsePoint Communications,[13061410]
+30,20907,1999,North American Vaccine Inc,[11847287]
+31,20969,1999,Texas Micro Inc,[11837514]
+32,20982,1999,Integrated Systems Inc,[10896179]
+33,22170,1999,Mosaix Inc,[12152685]
+34,23076,1999,Digital Origin Inc,
+35,23897,1999,PLATINUM Technology Inc,
+36,24093,1999,OpenROUTE Networks Inc,
+37,24140,1999,Telident Inc,[10891663]
+38,24338,1999,ThermoTrex Corp,[11523803]
+39,24345,1999,Powerhouse Technologies Inc,[11651356]
+40,24680,1999,Physician Computer Network Inc,
+41,24997,1999,Dames & Moore Group,[10249407]
+42,25271,1999,Ardent Software Inc,
+43,27940,1999,Wall Data Inc,[12563459]
+44,28125,1999,NFO Worldwide Inc,
+45,29092,1999,Holophane,"[11378745, 11504094]"
+46,29350,1999,CMC Industries Inc,
+47,29414,1999,Stimsonite Corp,[11178538]
+48,29650,1999,NeXstar Pharmaceuticals Inc,[11511947]
+49,29879,1999,Metrowerks Corp,[12758651]
+50,30034,1999,Dialogic Corp,"[10749384, 12563462, 11510542]"
+51,30203,1999,Ascend Communications Inc,[12091297]
+52,30368,1999,Sparta Pharmaceuticals Inc,
+53,30742,1999,SUGEN Inc,[11810173]
+54,30750,1999,Firstcom Corp,
+55,31319,1999,SunPharm Corp,[21986051]
+56,31465,1999,Neopath Inc,[11738459]
+57,31586,1999,DSP Communications Inc,
+58,31666,1999,Periphonics Corp,[12587290]
+59,31722,1999,Diamond Multimedia Systems Inc,[11803760]
+60,60822,1999,Teltrend Inc,[11655274]
+61,60958,1999,Metra Biosystems Inc,[11820290]
+62,61087,1999,Percon Inc,
+63,61132,1999,ThermoSpectra Corp(Thermo Instrument Systems Inc/Thermo Electron Corp),"[10120441, 10315386, 10623310]"
+64,61180,1999,Vantive Corp,
+65,61365,1999,Computer Management Sciences Inc,
+66,61500,1999,Perclose Inc,[11517699]
+67,61532,1999,Visio Corp,
+68,61603,1999,Yieldup International Corp,[12032027]
+69,61606,1999,Clarify Inc,
+70,61724,1999,TechForce Corp,
+71,61731,1999,Fuisz Technologies Ltd,[11697608]
+72,62192,1999,ULTRADATA Corp,
+73,62294,1999,iMall Inc,
+74,62300,1999,OrCAD Inc,
+75,62321,1999,Data Processing Resources Corp,
+76,62366,1999,Forte Software Inc,[11557797]
+77,62372,1999,XYLAN Corp,"[12170243, 10942877]"
+78,62390,1999,Isocor,
+79,62456,1999,Intelliquest Information Group Inc,
+80,62593,1999,Excite Inc,[12015249]
+81,62633,1999,Worldtalk Communications Corp,
+82,62753,1999,Edify Corp,[11555903]
+83,62833,1999,General Surgical Innovations,[11730822]
+84,62838,1999,SIBIA Neurosciences Inc,[11901232]
+85,62880,1999,GeoScience Corp(Tech-Sym Corp),[10634663]
+86,63003,1999,Innovasive Devices Inc,[11743321]
+87,63021,1999,Infoseek Corp,[11851956]
+88,63073,1999,Pacific Research & Engineering Corporation,
+89,63462,1999,SRS Labs Inc,[12818039]
+90,63462,1999,SRS Labs Inc,[12818039]
+91,63481,1999,Connectinc.com,
+92,63489,1999,Interlink Computer Sciences Inc,
+93,63589,1999,International Network Services,[12023849]
+94,63652,1999,Xionics Document Technologies Inc,[11655350]
+95,63754,1999,Gulfstream Aerospace Corp,
+96,63878,1999,Uroquest Medical Corp,
+97,64002,1999,SeaMED Corp,
+98,64007,1999,GeoTel Communications Corp,
+99,64128,1999,Vivid Technologies Inc,[11938758]
+100,64281,1999,EarthLink Network Inc,
+101,64320,1999,Medical Manager Corp,
+102,64914,1999,Genesys Telecommunications Laboratories Inc,[11902163]
+103,64936,1999,Laser Power Corp,[11851751]
+104,64996,1999,Advanced Communication Systems Inc,
+105,65267,1999,fine.com International Corp,
+106,65295,1999,LeukoSite Inc,[12137324]
+107,65766,1999,Excel Switching Corp,[12234618]
+108,65988,1999,USWeb/CKS,
+109,66021,1999,Thermo Vision Corp(Thermo Instrument/Thermo Electron),[12257503]
+110,66056,1999,Information Advantage Software Inc,
+111,66590,1999,ViaGrafix Corp,
+112,110104,1999,Tristar Aerospace Co,
+113,110480,1999,CombiChem Inc,
+114,110773,1999,RiboGene Inc,[11598636]
+115,111591,1999,NetGravity Inc,
+116,111968,1999,International Integration Inc,
+117,112625,1999,Broadcast.Com Inc,
+118,113364,1999,GeoCities,
+119,119016,1999,FlashNet Communications Inc,
+120,120215,1999,MapQuest.com Inc,[12382489]
+121,121615,1999,Software.com Inc,[12281935]
+122,121615,1999,Software.com Inc,[12281935]
+123,121760,1999,nFront Inc,
+124,134144,1999,eFunds Corp,[12435799]
+125,134144,1999,eFunds Corp,[12435799]
+126,2267,2000,Block Drug Co,[10226700]
+127,2891,2000,Cerprobe Corporation,[11928226]
+128,3291,2000,Comptek Research Inc,
+129,4374,2000,Engineering Measurements Co,[10799012]
+130,4806,2000,GRC International Inc,"[11909282, 10501636]"
+131,5721,2000,Wyant Corp,
+132,6035,2000,Interface Systems Inc,[10428746]
+133,6096,2000,Mallinckrodt Inc,"[10962147, 11448004, 10046726, 11595848, 11194959, 12671795, 11485142, 10594551]"
+134,7503,2000,Molecular Biosystems Inc,[11706973]
+135,7718,2000,National Computer Systems Inc,[10666684]
+136,8658,2000,Policy Management Systems Corp,[11717321]
+137,9545,2000,Seagate Technology Inc,[11293046]
+138,9804,2000,4Front Technologies Inc,
+139,10071,2000,Sterling Software Inc,[12099882]
+140,10092,2000,Stone & Webster Inc,"[10409254, 10303742, 12443487]"
+141,10422,2000,Telxon Corp,[11844939]
+142,10537,2000,Thermedics Inc(Thermo Electron Corp),[11961753]
+143,12337,2000,Interleaf Inc,[11679519]
+144,12397,2000,Liposome Co Inc,"[11551408, 10583929, 11866624]"
+145,13197,2000,Thermo Instrument Systems Inc,"[10120441, 10315386, 10623310]"
+146,14290,2000,Chesapeake Biological Laboratories Inc,
+147,15248,2000,Primark Corp,"[10175944, 10241468]"
+148,24543,2000,Centigram Communications Corp,
+149,24845,2000,InnerDyne Inc,"[11563010, 11533708]"
+150,24908,2000,Dura Pharmaceuticals Inc,[12216237]
+151,25004,2000,Advanced Machine Vision Corp,
+152,25441,2000,MicroTouch Systems Inc,[11465461]
+153,25864,2000,Citation Computer Systems Inc,
+154,28147,2000,Equinox Systems Inc,
+155,28756,2000,Concentrex Inc,
+156,28848,2000,PairGain Technologies Inc,[11964592]
+157,29396,2000,Active Voice Corp,[11427493]
+158,29643,2000,Anesta Corp,[11391887]
+159,30131,2000,Ancor Communication Inc,
+160,30639,2000,Loronix Information Systems Inc,
+161,30844,2000,Ortel Corp,[11530569]
+162,31679,2000,Mustang.com Inc,
+163,31757,2000,ACT Networks Inc,
+164,60933,2000,Spyglass Inc,[11984033]
+165,60955,2000,Inference Corp,[11681664]
+166,61370,2000,Microwave Power Devices Inc,
+167,61508,2000,GelTex Pharmaceuticals Inc,[21986051]
+168,61601,2000,PathoGenesis Corp,[11608269]
+169,61642,2000,Objective Systems Integrators Inc,[12613129]
+170,62284,2000,Engineering Animation Inc,[11998429]
+171,62338,2000,Sterling Commerce Inc,[11919274]
+172,62433,2000,ThermoQuest Corp(Thermo Instrument Systems/Thermo Electron),
+173,62535,2000,Trega Biosciences Inc,[11826156]
+174,62550,2000,Lycos Inc,[12875664]
+175,62690,2000,AXENT Technologies Inc,[11928846]
+176,62932,2000,Aspect Development Inc,
+177,63013,2000,Thermo Optek Corp(Thermo Instrument Systems Inc/Thermo Electron Co),
+178,63140,2000,Integ Inc,[11846217]
+179,63201,2000,Printrak International Inc,[11648394]
+180,63509,2000,DBT Online Inc,
+181,63594,2000,Thermo BioAnalysis Corp(Thermo Instrument Systems Inc/Thermo Electron Corp),
+182,63744,2000,Splash Technology Holdings Inc,
+183,63827,2000,Image Guided Technologies Inc (STRYKER CORP),[11722170]
+184,64299,2000,Coulter Pharmaceuticals Inc,[12438835]
+185,64415,2000,Thermedics Detection Inc(Thermedics Inc/Thermo Electron Corp),
+186,64886,2000,eFax.com.Inc,
+187,64950,2000,Great Plains Software Inc,
+188,64961,2000,Metrika Systems Corp(Thermo Instrument Systems Inc/Thermo Electron Corp),[10674387]
+189,64984,2000,3Dfx Interactive Inc,[12004328]
+190,65175,2000,Corsair Communications Inc,
+191,65488,2000,Network Solutions Inc,
+192,65604,2000,SPR Inc,
+193,65716,2000,Faroudja Inc,[12680463]
+194,65749,2000,Howmet International Inc (Cordant Technologies Inc),
+195,65880,2000,InterVU Inc,[12103030]
+196,66101,2000,Agritope Inc,[12218049]
+197,66658,2000,LJL Biosystems Inc,[11763545]
+198,107670,2000,ONIX Systems Inc(Thermo Instrument Systems),
+199,109185,2000,Schein Pharmaceutical Inc,
+200,119214,2000,About.com Inc,[12181788]
+201,119256,2000,OneMain.com Inc,
+202,121453,2000,AppNet Inc,
+203,121561,2000,Ramp Networks Inc,[12343379]
+204,121761,2000,ShowCase Corp,[11789708]
+205,122894,2000,Active Software Inc,
+206,124177,2000,Bluestone Software Inc,
+207,124679,2000,Jupiter Communications Inc,
+208,126616,2000,Exactis.com Inc,[12037162]
+209,127414,2000,Ondisplay Inc,
+210,133469,2000,Telocity Delaware Inc,[12353250]
+211,1359,2001,ALZA Corp,[11720689]
+212,3282,2001,Compaq Computer Corp,"[10374145, 11829573, 10677779, 10761204, 10949879, 11253876, 11277788, 10848638]"
+213,3796,2001,Datron Systems Inc,[10949761]
+214,5122,2001,GenRad Inc,"[11001315, 10170741, 10705894]"
+215,8014,2001,Novametrix Medical Systems Inc,[11716923]
+216,9051,2001,Minntech Corp,[11379735]
+217,9313,2001,SCI Systems Inc,[10576731]
+218,10458,2001,Dynamic Healthcare Technologies Inc,
+219,12580,2001,Duramed Pharmaceuticals Inc,[12446268]
+220,12730,2001,Data Dimensions Inc,
+221,13228,2001,Total Research Corp,
+222,13608,2001,PictureTel Corp,[11417672]
+223,13902,2001,Structural Dynamics Research Corp,[10546742]
+224,14554,2001,Sensory Science Corp,
+225,22546,2001,PolyVision Corp,"[12767739, 11180470]"
+226,22657,2001,Network Six Inc,
+227,22823,2001,IKOS Systems Inc,[10887061]
+228,23819,2001,Laser Vision Centers Inc,[11498986]
+229,24220,2001,COR Therapeutics Inc,[11596724]
+230,25115,2001,Xircom Inc,"[12323233, 12463335]"
+231,25523,2001,Aronex Pharmaceuticals Inc,[12388042]
+232,28130,2001,Cambridge Technology Partners (Massachusetts) Inc,
+233,28585,2001,Fourth Shift Corp,
+234,29822,2001,CIDCO Inc,"[12489293, 11780447]"
+235,30031,2001,Centennial Technologies Inc,[12044948]
+236,30239,2001,MedPlus Inc,
+237,30781,2001,PRI Automation Inc,"[12927546, 12153478]"
+238,30835,2001,Learn2.com Inc,[12095091]
+239,31129,2001,Avert Inc,
+240,31194,2001,BTG Inc,
+241,60797,2001,Avant! Corp,[11893643]
+242,61048,2001,Integrated Measurement Systems Inc,[11945234]
+243,61359,2001,Blue Wave Systems Inc,
+244,61541,2001,Healthcare.com Corp,
+245,61684,2001,Labtec Inc,"[12047434, 12629787]"
+246,62581,2001,Microware Systems Corp,[12241723]
+247,62705,2001,Heartport Inc,[11701576]
+248,62738,2001,Sawtek Inc,[12017265]
+249,62814,2001,NOVA Corp,
+250,62925,2001,Open Market Inc,[12009492]
+251,63038,2001,Cardiac Pathways Corp,[11633967]
+252,63771,2001,CUseeMe Networks Inc,
+253,63779,2001,Mediconsult.com Inc,
+254,63934,2001,Aviron,[11678473]
+255,63955,2001,Alysis Technologies Inc,[12131625]
+256,63956,2001,IMRglobal Corp,
+257,64145,2001,MessageMedia Inc,[12346996]
+258,64173,2001,Credit Management Solutions Inc,
+259,64321,2001,Metro Information Services Inc,
+260,64682,2001,Exigent International Inc,[12269496]
+261,64863,2001,eShare Communications Inc,
+262,64924,2001,Aris Corp,
+263,64927,2001,New Era of Networks Inc,[12201556]
+264,64931,2001,Aurora Biosciences Corp,[12104808]
+265,66027,2001,Focal Inc,[12277095]
+266,66416,2001,Vysis Inc(BP PLC),[12374871]
+267,111732,2001,Unigraphics Solutions Inc (Electronic Data Systems Corp),[11998429]
+268,117701,2001,Allaire Corp,
+269,118167,2001,Prodigy Communications Corp,
+270,118446,2001,WebTrends Corp,[12212238]
+271,119956,2001,Launch Media Inc,
+272,120818,2001,Juno Online Services Inc,"[12356739, 11948397]"
+273,121377,2001,Liquent Inc,
+274,121755,2001,Digital Island Inc,[12375470]
+275,122075,2001,Be Inc,
+276,122680,2001,Women.com Networks,
+277,122838,2001,NetSilicon Inc,[12635514]
+278,124326,2001,Telemate Net Software Inc,
+279,125277,2001,Data Return Corp,
+280,127534,2001,C-bridge Internet Solutions,
+281,132406,2001,net.Genesis Corp,
+282,133325,2001,Eprise Corp,
+283,134451,2001,Packard BioScience Co,"[12202984, 12541379, 12101573]"
+284,134984,2001,CrossWorlds Software Inc,[12194688]
+285,135024,2001,Sequoia Software Corp,[12632455]
+286,138470,2001,Rosetta Inpharmatics Inc,[12322093]
+287,139749,2001,Zengine Inc (Miami Computer Supply Corp),
+288,140062,2001,Elastic Networks Inc,[12687473]
+289,140065,2001,Genomica Corp,
+290,1324,2002,Scherer Healthcare Inc,[11479703]
+291,3798,2002,Datum Inc,[12233800]
+292,5174,2002,Gish Biomedical Inc,[11258533]
+293,7329,2002,Micro General Corp(Fidelity National Financial Inc),[11794526]
+294,7536,2002,Pharmacia Corp,"[10342322, 11810173]"
+295,11908,2002,IFR Systems,
+296,16437,2002,BEI Medical Systems Co Inc,"[11399501, 11523741]"
+297,21204,2002,Syntellect Inc,[11268519]
+298,21507,2002,ACTV Inc,[10673072]
+299,22345,2002,Westwood Corp,[12272428]
+300,23486,2002,Visionics Corp,[12211517]
+301,23777,2002,Frontstep Inc,
+302,24877,2002,Matrix Pharmaceutical Inc,[11850146]
+303,25390,2002,SpaceLabs Medical Inc,[11331990]
+304,28265,2002,Avidyn Inc,
+305,28780,2002,ATPOS.COM INC,
+306,29436,2002,Proxim Inc,[11512687]
+307,31459,2002,Ostex International Inc,[21850647]
+308,31534,2002,Intelligent Controls Inc,[12018268]
+309,60868,2002,ClickAction Inc,
+310,60901,2002,HNC Software Inc,[11919226]
+311,61723,2002,Synaptic Pharmaceutical Corp,[11886157]
+312,62859,2002,Mechanical Dynamics Inc,[12668280]
+313,62975,2002,Paravant Inc,[12725016]
+314,63004,2002,Fusion Medical Technologies Inc,[12799262]
+315,63324,2002,Excelon Corp,
+316,63822,2002,Innoveda Inc,
+317,63836,2002,ONTRACK Data International Inc,[12245088]
+318,63941,2002,Triangle Pharmaceuticals Inc,[12181786]
+319,65315,2002,INSpire Insurance Solutions Inc,
+320,111488,2002,Inktomi Corp,[12309003]
+321,112001,2002,Collateral Therapeutics Inc,[12579654]
+322,117359,2002,Momentum Business Applications Inc,
+323,121481,2002,Viant Corp,
+324,121693,2002,US Search.com Inc,[12947974]
+325,121835,2002,Clarent Corp,[12553030]
+326,122171,2002,Hoovers Inc,
+327,123019,2002,SilverStream Software Inc,[12456930]
+328,123080,2002,Wink Communications Inc (Liberty Broadband Interactive Television),[13128327]
+329,126717,2002,Official Payments Corp,
+330,126773,2002,McAfee.com Corp(Networks Associates Inc),
+331,127541,2002,Truetime Inc,
+332,128560,2002,Extensity Inc,
+333,129635,2002,Vicinity Corp,[12463392]
+334,132641,2002,OraPharma Inc,[12783067]
+335,132702,2002,OTG Software Inc,
+336,133729,2002,Oratec Interventions Inc,[12235999]
+337,134744,2002,SignalSoft Corp,[12312392]
+338,134764,2002,Talarian Corp,
+339,134869,2002,Genomic Solutions Inc,"[12823569, 12402159]"
+340,135914,2002,ONI Systems Corp,[12404347]
+341,137357,2002,Genuity Inc,[12677595]
+342,138487,2002,H Power Corp,[11392600]
+343,138701,2002,AvantGo Inc,[12441316]
+344,138706,2002,PeoplePC Inc,
+345,140067,2002,InforMax Inc,
+346,140798,2002,MediChem Life Sciences Inc (Oshkosh Truck Corp),
+347,141390,2002,Ribapharm Inc,[12523695]
+348,143444,2002,Simplex Solutions Inc,[12391324]
+349,1281,2003,Allen Telecom Inc,"[12137912, 10232091, 10187877]"
+350,2226,2003,Biogen Inc,"[11459032, 11186713, 12833763, 10630901, 12870745]"
+351,2616,2003,Scios Inc,[11327165]
+352,3164,2003,Cole National Corp,[10635575]
+353,3769,2003,INRANGE Technologies Corp,[12500813]
+354,12913,2003,Tangram Enterprise Solutions Inc,
+355,22250,2003,SICOR Inc,[10795625]
+356,23955,2003,Ross Systems Inc,
+357,24881,2003,Corvas International Inc,[11758939]
+358,25164,2003,Simula Inc,[10609621]
+359,25375,2003,Elite Information Group Inc,
+360,25944,2003,PeopleSoft Inc,[12050010]
+361,28337,2003,Signal Technology Corp,[12618856]
+362,28806,2003,Arrowhead Research Corp,[10470103]
+363,29069,2003,Acres Gaming Inc,[11841183]
+364,29339,2003,Fidelity National Information Solutions Inc,[11794526]
+365,29390,2003,SangStat Medical Corp,[11927822]
+366,30061,2003,Interlott Technologies Inc,[12043241]
+367,30546,2003,CIMA Labs Inc,[11319574]
+368,60969,2003,Legato Systems Inc,[11899141]
+369,61102,2003,On Technology Corp,
+370,62005,2003,Documentum Inc,"[12128605, 12653365]"
+371,62162,2003,SCB Computer Technology Inc,
+372,62526,2003,Diacrin Inc,[11777174]
+373,64029,2003,Rogue Wave Software Inc,[11935771]
+374,64680,2003,Bionx Implants Inc,"[12651352, 12101100]"
+375,65031,2003,Mercator Software Inc,
+376,65169,2003,BioReliance Corp,
+377,65264,2003,Computer Motion Inc,[11653198]
+378,65440,2003,ProBusiness Services Inc,
+379,65466,2003,JD Edwards & Co,[12050010]
+380,110160,2003,Brio Software Inc,[12743661]
+381,110560,2003,Factual Data Corp,
+382,115750,2003,Cell Pathways Inc,[11821347]
+383,119081,2003,Multex.com Inc,[12765679]
+384,120296,2003,Latitude Communications Inc,
+385,120719,2003,Interliant Inc,
+386,121436,2003,Overture Services Inc,[12801317]
+387,122437,2003,N2H2 Inc,
+388,125357,2003,MCK Communications Inc,
+389,126298,2003,Next Level Communications Inc,[12007552]
+390,126495,2003,iManage Inc,[12775299]
+391,128620,2003,T/R Systems Inc,[10345571]
+392,129470,2003,FASTNET Corp,
+393,129628,2003,Lightspan Inc,
+394,130400,2003,Eloquent Inc,
+395,134964,2003,Pinnacor Inc,
+396,137067,2003,Handspring Inc,[12542637]
+397,137374,2003,CareScience Inc,
+398,137394,2003,Virage Inc,[12563444]
+399,138121,2003,Applied Molecular Evolution Inc,[12887638]
+400,138131,2003,ValiCert Inc,[12003651]
+401,138345,2003,SpeechWorks International Inc,[12095928]
+402,138490,2003,3-Dimensional Pharmaceuticals Inc,[12233315]
+403,138703,2003,Esperion Therapeutics Inc,[12717134]
+404,139244,2003,SYNAVANT Inc,
+405,144645,2003,Bruker AXS Inc,[13135377]
+406,147306,2003,Printcafe Software Inc,
+407,1244,2004,Alcide Corp,[11352343]
+408,1500,2004,American Management Systems Inc,
+409,3277,2004,Group 1 Software Inc,[12845150]
+410,3776,2004,Media 100 Inc,[12172836]
+411,6159,2004,SI Technologies Inc,
+412,7932,2004,Norstan Inc,
+413,11722,2004,Isco Inc,[10869153]
+414,14897,2004,VISX Inc,[11439121]
+415,15133,2004,Apogent Technologies Inc,
+416,15203,2004,Netegrity Inc,
+417,15315,2004,ALARIS Medical Systems Inc,[11872635]
+418,21685,2004,Atrix Laboratories Inc,[11833950]
+419,24486,2004,Barra Inc,[13124388]
+420,26360,2004,Novadigm Inc,[12879187]
+421,28937,2004,Epoch Biosciences Inc,[12760845]
+422,29356,2004,Veritas Software Corp,[12363298]
+423,29374,2004,Zamba Corp,
+424,30862,2004,Owosso Corp,[10190531]
+425,31166,2004,Guidant Corp,"[12142562, 12093482, 11558621, 11988247]"
+426,61641,2004,META Group Inc,
+427,62295,2004,Image Systems Corp,
+428,63381,2004,Optika Inc,
+429,63674,2004,Bionova Holding Corp,
+430,63678,2004,Advanced Fibre Communications Inc,[12619338]
+431,63984,2004,Sanchez Computer Associates Inc,
+432,64412,2004,ILEX Oncology Inc,[12377411]
+433,64497,2004,Endocardial Solutions Inc,[12340307]
+434,65217,2004,Ocular Sciences Inc,[12531706]
+435,109423,2004,Horizon Medical Products Inc,[12093382]
+436,111102,2004,InterCept Inc,[10546407]
+437,111492,2004,Panacos Pharmaceuticals Inc,[12868007]
+438,117358,2004,MarketWatch Inc,
+439,120156,2004,Marimba Inc,[12481631]
+440,120634,2004,OneSource Information Services Inc,
+441,120839,2004,Inet Technologies Inc,[12128914]
+442,121720,2004,Persistence Software Inc,[11599371]
+443,121842,2004,Primus Knowledge Solutions Inc,
+444,122734,2004,Braun Consulting Inc,
+445,124359,2004,NetSolve Inc,[12158420]
+446,127384,2004,Tularik Inc,"[11739858, 12840682]"
+447,127480,2004,Infonet Services Corp,[13158843]
+448,128698,2004,interWAVE Communications International Ltd,
+449,133047,2004,TippingPoint Technologies Inc,[13083323]
+450,133164,2004,ACLARA Biosciences Inc,[12143036]
+451,140900,2004,TheraSense Inc,[12651494]
+452,141098,2004,Computer Access Technology Corp,[12811151]
+453,145161,2004,Nassda Corp,[12677992]
+454,145513,2004,NetScreen Technologies Inc,[12801432]
+455,147990,2004,Inveresk Research Group Inc,[10192117]
+456,2246,2005,Bio-Logic Systems Corp,[10962359]
+457,3011,2005,Chiron Corp,"[11850146, 11547859, 11608269, 10784623, 12159794, 10759699, 11341078]"
+458,4132,2005,Acterna Corp,"[12714513, 12484789, 12330006]"
+459,4675,2005,Inamed Corp,[10449026]
+460,7123,2005,Maxtor Corp,"[12580358, 10905055]"
+461,7139,2005,Maytag Corp,[10516033]
+462,7208,2005,Compex Technologies Inc,
+463,8872,2005,Advanced Neuromodulation Systems Inc,
+464,9483,2005,Scientific Atlanta Inc,[10623228]
+465,10097,2005,Storage Technology Corp,[11445447]
+466,10321,2005,BioSource International Inc,[12918420]
+467,10541,2005,Thomas Industries Inc,"[12490790, 10854377, 10130702, 10803406, 10291352, 10069786, 10468506]"
+468,10588,2005,Titan Corp,[10099918]
+469,12587,2005,Ascential Software Corp,[12704110]
+470,14250,2005,nStor Technologies Inc,
+471,14446,2005,IVAX Corp,"[12031874, 11847462, 10111660, 12755381, 10755231, 11676351]"
+472,28325,2005,Tarantella Inc,[12932380]
+473,28822,2005,Captiva Software Corp,
+474,29381,2005,Macromedia Inc,[12473490]
+475,30352,2005,Guilford Pharmaceuticals Inc,[12062521]
+476,30760,2005,CyberGuard Corp,[12791143]
+477,30946,2005,Pinnacle Systems Inc,[12051625]
+478,31761,2005,InKine Pharmaceutical Co Inc,[12262464]
+479,60796,2005,Med-Design Corp,
+480,61401,2005,Verity Inc,[12892419]
+481,62079,2005,Intermix Media Inc,
+482,62728,2005,Physiometrix Inc,[11311174]
+483,62821,2005,Bone Care International Inc,[11714513]
+484,63180,2005,Siebel Systems Inc,[12929655]
+485,63328,2005,Webhire Inc,
+486,63617,2005,Closure Medical Corp,[12720846]
+487,63804,2005,Transkaryotic Therapies Inc,[12148724]
+488,64099,2005,Intellisync Corp,[12899190]
+489,65578,2005,Corixa Corp,"[10763306, 12438835, 11360422]"
+490,65622,2005,Concord Communications Inc,
+491,66468,2005,Micromuse Inc,[12505248]
+492,66582,2005,Extended Systems Inc,[11901689]
+493,110100,2005,First Virtual Communications Inc,
+494,112178,2005,Abgenix Inc,[12175181]
+495,112752,2005,Bindview Development Corp,[12395607]
+496,120455,2005,Copper Mountain Networks Inc,
+497,121938,2005,Keith Cos Inc,
+498,123995,2005,Epiphany Inc,[12261103]
+499,127438,2005,GoRemote Internet Communications Inc,[13007032]
+500,129419,2005,Centra Software Inc,
+501,132369,2005,Niku Corp,[12765657]
+502,134031,2005,Nuance Communications Inc,
+503,134452,2005,SeeBeyond Technology Corp,[12936890]
+504,135247,2005,Icoria Inc,[12906060]
+505,137864,2005,Corio Inc,
+506,138343,2005,Genaissance Pharmaceuticals Inc,[12072614]
+507,138404,2005,Vicuron Pharmaceuticals Inc,[12820305]
+508,141097,2005,AeroGen Inc,"[11858637, 12216893]"
+509,141381,2005,Verisity Ltd,[12619727]
+510,143869,2005,HPL Technologies Inc,[12895953]
+511,146617,2005,Anteon International Corp,
+512,147302,2005,Plumtree Software Inc,[12904662]
+513,147885,2005,Eon Labs Inc,
+514,156292,2005,Eyetech Pharmaceuticals Inc,
+515,156619,2005,AlphaSmart Inc,
+516,160810,2005,JAMDAT Mobile Inc,
+517,260892,2005,Animas Corp,[12523035]
+518,4456,2006,Essex Corp,[11179555]
+519,5476,2006,John H Harland Co,[10809396]
+520,6039,2006,Intermagnetics General Corp,[11048248]
+521,10232,2006,Symbol Technologies Inc,"[11844939, 10454101]"
+522,11720,2006,Identix Inc,[12211517]
+523,13204,2006,Fisher Scientific International Inc,[10855109]
+524,13474,2006,CNS Inc,[12650474]
+525,13525,2006,FileNet Corp,[10785095]
+526,14810,2006,VitalStream Holdings Inc,
+527,22957,2006,Sentigen Holding Corp,
+528,23355,2006,Professional Dental Technology Inc,[11212226]
+529,24110,2006,ICOS Corp,"[12900620, 10105582]"
+530,24531,2006,Per-Se Technologies Inc,
+531,25150,2006,Stellent Inc,
+532,28461,2006,Trestle Holdings Inc,
+533,28744,2006,Manugistics Group Inc,[12515196]
+534,29075,2006,Opinion Research Corp,
+535,29095,2006,Mercury Interactive Corp,[11757438]
+536,30094,2006,MRO Software Inc,[12619588]
+537,31168,2006,RSA Security Inc,[12340184]
+538,60875,2006,Serologicals Corp,"[12843899, 12631581]"
+539,61402,2006,Vodavi Technology Inc,[10688865]
+540,61427,2006,ADE Corp,
+541,62511,2006,Segue Software Inc,[11700789]
+542,62599,2006,Lucent Technologies Inc,[11421745]
+543,62632,2006,Sirna Therapeutics Inc,[12897815]
+544,63051,2006,Andrx Corp,"[11828402, 12890459, 12206862]"
+545,63053,2006,Netopia Inc,
+546,63644,2006,Advanced Digital Information Corp,[11881367]
+547,64542,2006,Kos Pharmaceuticals Inc,[11748355]
+548,65368,2006,Tripath Imaging Inc,[12234354]
+549,106900,2006,Internet Security Systems Inc,[11992903]
+550,110721,2006,Carreker Corp,[11996298]
+551,117905,2006,Tut Systems Inc,[11447225]
+552,120300,2006,Portal Software Inc,[12147267]
+553,120595,2006,Redback Networks Inc,[12718793]
+554,124435,2006,Digital Insight Corp,
+555,126597,2006,MetaSolv  Inc,[12743837]
+556,132405,2006,MatrixOne Inc,[13034709]
+557,132980,2006,Loudeye Corp,"[12901576, 12438044]"
+558,133731,2006,Tanox Inc,"[12745494, 11345015]"
+559,135865,2006,Broadwing Corp,[13034077]
+560,137252,2006,Click Commerce Inc,[13158644]
+561,138129,2006,Rita Medical Systems Inc,[12093382]
+562,140061,2006,At Road Inc,[12694576]
+563,142096,2006,Xenogen Corp,[12714452]
+564,146735,2006,InterVideo Inc,[12642863]
+565,156133,2006,Myogen Inc,
+566,161012,2006,PortalPlayer Inc,[12631969]
+567,161926,2006,Conor Medsystems Inc,[12341762]
+568,163121,2006,Valera Pharmaceuticals Inc,[-18223]
+569,1651,2007,Andrew Corp,"[11007980, 11078934]"
+570,2537,2007,C-COR Inc,[10798906]
+571,6571,2007,Lamson & Sessions Co,"[10964080, 10242923, 10047075, 11270014]"
+572,10391,2007,Tektronix Inc,[12128914]
+573,13369,2007,Komag Inc,[11934111]
+574,14385,2007,Respironics Inc,[10051527]
+575,14487,2007,Tutogen Medical Inc,[12303544]
+576,18484,2007,Web.com Inc,
+577,23387,2007,ZEVEX International Inc,
+578,24008,2007,MedImmune Inc,"[11057481, 11678473]"
+579,24449,2007,Enpath Medical Inc,[13101396]
+580,25000,2007,PolyMedica Corp,[11753699]
+581,25080,2007,BISYS Group Inc,
+582,25355,2007,Arrow International Inc,[11990432]
+583,25433,2007,Cholestech Corp,[11256954]
+584,25514,2007,Matritech Inc,[11786562]
+585,28078,2007,Neoware Inc,
+586,29661,2007,MapInfo Corp,[12201496]
+587,30688,2007,Business Objects SA,[12347008]
+588,30843,2007,Microtek Medical Holdings Inc,[12723643]
+589,31144,2007,Applix Inc,
+590,61355,2007,CheckFree Corp,"[11483113, 12427577]"
+591,61498,2007,Hyperion Solutions Corp,[12743661]
+592,61706,2007,Molecular Devices Corp,"[11763545, 12281935]"
+593,61752,2007,Castelle Inc,
+594,61877,2007,Neon Communications Group Inc,[12489699]
+595,62336,2007,Cytyc Corp,"[12689998, 11366495]"
+596,62709,2007,SpectraLink Corp,[11696638]
+597,62913,2007,Digene Corp,[12377579]
+598,63606,2007,Document Sciences Corp,
+599,63663,2007,Authorize.Net Holdings Inc,[12007800]
+600,64375,2007,Biosite Inc,"[12780209, 11570997]"
+601,64606,2007,BEA Systems Inc,[12026637]
+602,64639,2007,Covansys Corp,
+603,113425,2007,Terayon Communication Systems Inc,[11905583]
+604,113498,2007,24/7 Real Media Inc,[12037162]
+605,115245,2007,Therma-Wave Inc,"[12404326, 10679463]"
+606,118733,2007,Bioenvision Inc,
+607,121437,2007,EasyLink Services Corp,
+608,123094,2007,Agile Software Corp,[12690674]
+609,129850,2007,Witness Systems Inc,[12470574]
+610,133985,2007,Corillian Corp,
+611,141957,2007,Opsware Inc,"[12916897, 12758426]"
+612,145854,2007,VIASYS Healthcare Inc,"[12563322, 12822211]"
+613,147200,2007,ViaCell Inc,[12529012]
+614,147452,2007,Altiris Inc,[12244992]
+615,155795,2007,Pharmion Corp,[12987855]
+616,160203,2007,Color Kinetics Inc,[12724597]
+617,160231,2007,Nextest Systems Corp,[12854868]
+618,160260,2007,NAVTEQ Corp,[12878903]
+619,160374,2007,New River Pharmaceuticals Inc,
+620,160597,2007,IntraLase Corp,[12354595]
+621,160607,2007,Stratagene Corp,"[11212459, 11478359]"
+622,161037,2007,Adeza Biomedical Corp,[11750394]
+623,161073,2007,FoxHollow Technologies Inc,
+624,163672,2007,HemoSense Inc,[12146051]
+625,163888,2007,Coley Pharmaceutical Group Inc,[12827230]
+626,166365,2007,Visicu Inc,[12904656]
+627,177838,2007,Xcorporeal Inc,
+628,5074,2008,Electronic Data Systems Corp,[11998429]
+629,6152,2008,InterVoice Inc,[12313956]
+630,6169,2008,Iomega Corp,[12069915]
+631,7250,2008,Mentor Corp,[11060425]
+632,8925,2008,Radyne Corp,"[10584904, 10791318]"
+633,13365,2008,Barr Pharmaceuticals Inc,[12887659]
+634,14285,2008,Bentley Pharmaceuticals Inc,
+635,19557,2008,HealthAxis Inc,
+636,22718,2008,SYS Technologies Inc,
+637,22765,2008,TouchStone Software Corp,
+638,24179,2008,Genelabs Technologies Inc,[11406619]
+639,24699,2008,ImClone Systems Inc,[11459034]
+640,24982,2008,LifeCell Corp,[11464756]
+641,27771,2008,Insightful Corp,[12632448]
+642,29085,2008,Credence Systems Corp,"[11945234, 12722107]"
+643,29992,2008,Encysive Pharmaceuticals Inc,[12713804]
+644,31143,2008,Captaris Inc,[12863458]
+645,61462,2008,Specialized Health Products International Inc,[12051525]
+646,61560,2008,Photon Dynamics Inc,[11270127]
+647,61570,2008,Secure Computing Corp,[12791143]
+648,62571,2008,Ansoft Corp,
+649,62911,2008,Avigen Inc,[11722856]
+650,63100,2008,EP MedSystems Inc,[12818205]
+651,64009,2008,Prescient Applied Intelligence Inc,
+652,110562,2008,Digital Fusion Inc,
+653,122360,2008,Packeteer Inc,[12146980]
+654,124319,2008,Foundry Networks Inc,[12835218]
+655,127075,2008,Digimarc Corp,[12680808]
+656,127462,2008,Optio Software Inc,
+657,133430,2008,Moldflow Corp,[11678256]
+658,140445,2008,Kosan Biosciences Inc,[12133883]
+659,140679,2008,Synplicity Inc,[12834472]
+660,142106,2008,Third Wave Technologies Inc,[11791142]
+661,155794,2008,NitroMed Inc,[12562044]
+662,156615,2008,Kintera Inc,[12947799]
+663,157757,2008,Motive Inc,[12971345]
+664,160237,2008,Pharmacopeia Inc,"[12158625, 13184154, 12742417]"
+665,160933,2008,Eagle Test Systems Inc,[12859842]
+666,163721,2008,CryoCor Inc,[12855822]
+667,163922,2008,Avalon Pharmaceuticals Inc,
+668,165650,2008,SGX Pharmaceuticals Inc,
+669,166450,2008,Omrix Biopharmaceuticals Inc,"[12334994, 12568733]"
+670,177285,2008,Sirtris Pharmaceuticals Inc,
+671,177870,2008,BladeLogic Inc,
+672,182309,2008,ARCA biopharma Inc,
+673,1478,2009,Wyeth,"[11021796, 10720009, 10443309, 10041806, 11751984, 10374419, 10144127]"
+674,2299,2009,CardioDynamics International Corp,[12661986]
+675,2950,2009,Chattem Inc,"[10149748, 12867559]"
+676,7268,2009,Merrimac Industries Inc,[10337434]
+677,9459,2009,Schering Plough Corp,"[12579654, 10583854]"
+678,10553,2009,3Com Corp,"[11516776, 11749001, 11659883, 13083323, 11931678]"
+679,12136,2009,Sun Microsystems Inc,"[11134904, 12936890, 12932380, 11557797]"
+680,12390,2009,Candela Corp,"[12298533, 10466570, 11840076, 12895117, 11471600, 10217270]"
+681,12679,2009,Silicon Graphics Inc,[10861733]
+682,19069,2009,Neurogen Corp,[12275015]
+683,24191,2009,Medarex Inc,[10965599]
+684,28145,2009,Wind River Systems Inc,[10896179]
+685,28758,2009,SPSS Inc,[11789708]
+686,28942,2009,Corrpro Cos Inc,[10898657]
+687,30697,2009,Affiliated Computer Services Inc,
+688,61253,2009,AXS-One Inc,
+689,62712,2009,i2 Technologies Inc,"[12434146, 12288989]"
+690,63898,2009,Midway Games Inc,"[12588505, 12575083, 12415668]"
+691,63996,2009,CV Therapeutics Inc,[11529937]
+692,64397,2009,Avocent Corp,"[12801380, 12771756, 12848473]"
+693,65072,2009,AMICAS Inc,[13100186]
+694,65550,2009,Logility Inc,
+695,66698,2009,CuraGen Corp,[12441256]
+696,113361,2009,Catapult Communications Corp,
+697,118003,2009,Perot Systems Corp,[12411175]
+698,118445,2009,Vignette Corp,[12787793]
+699,119216,2009,Varian Inc,[12293461]
+700,120822,2009,Goldleaf Financial Solutions Inc,
+701,124678,2009,Interwoven Inc,[12775299]
+702,145809,2009,LogicVision Inc,[11912469]
+703,148870,2009,Advanced Medical Optics Inc,[11439121]
+704,158746,2009,Metabasis Therapeutics Inc,[11863597]
+705,159125,2009,etrials Worldwide Inc,
+706,162356,2009,Emageon Inc,
+707,174871,2009,Omniture Inc,
+708,176663,2009,Cougar Biotechnology Inc,
+709,177286,2009,Starent Networks Corp,[13080440]
+710,177740,2009,Data Domain Inc,
+711,178547,2009,Targanta Therapeutics Corp,
+712,178645,2009,Metavante Technologies Inc,
+713,179459,2009,iBasis Inc,
+714,3971,2010,Dionex Corp,[12101081]
+715,6314,2010,K-Tron International Inc,"[10375808, 10171102]"
+716,6370,2010,Keithley Instruments Inc,[11016727]
+717,9340,2010,Valeant Pharmaceuticals International Inc,[12843902]
+718,12233,2010,Genzyme Corp,"[11278544, 21986051, 11200676, 11733134, 12442591]"
+719,15106,2010,Beckman Coulter Inc,"[12284990, 10127622]"
+720,21066,2010,Medical Nutrition USA Inc,
+721,27997,2010,Applied Signal Technology Inc,
+722,29709,2010,Sonic Solutions,[11736571]
+723,29939,2010,Biosphere Medical Inc,[12435028]
+724,61523,2010,ADAM Inc,
+725,64451,2010,Global Med Technologies Inc,
+726,65527,2010,Hypercom Corp,[11796909]
+727,66198,2010,BMP Sunstone Corp,
+728,112033,2010,King Pharmaceuticals Inc,"[11968721, 10038507, 11170877, 12655581]"
+729,113270,2010,Eclipsys Corp,[12929604]
+730,121656,2010,CyberSource Corp,[11964620]
+731,126601,2010,Symyx Technologies Inc,[12406658]
+732,130040,2010,Chordiant Software Inc,
+733,132502,2010,Palm Inc,[12366240]
+734,137130,2010,Occam Networks Inc,[12723186]
+735,145228,2010,ZymoGenetics Inc,[10869328]
+736,145512,2010,Abraxis BioScience Inc,
+737,146071,2010,Henry Bros Electronics Inc,
+738,160498,2010,Cogent Inc,"[10712104, 12577706, 10907174]"
+739,161965,2010,Argon ST Inc,[12998235]
+740,161994,2010,COMSYS IT Partners Inc,
+741,162355,2010,Unica Corp,
+742,163102,2010,Micrus Endovascular Corp,[13237990]
+743,174471,2010,DivX Inc,
+744,174663,2010,Stanley Inc,
+745,175084,2010,SenoRx Inc,[12789071]
+746,175153,2010,Trubion Pharmaceuticals Inc,[13218751]
+747,176279,2010,Isilon Systems Inc,[13246524]
+748,176658,2010,Salary.com Inc,[12835571]
+749,178548,2010,Compellent Technologies Inc,
+750,178805,2010,ICx Technologies Inc,
+751,178866,2010,3PAR Inc,
+752,179378,2010,ArcSight Inc,
+753,264506,2010,Phase Forward Inc,[12920235]
+754,2251,2011,Microfluidics International Corp,[12259442]
+755,5229,2011,Goodrich Corp,[10670354]
+756,7106,2011,Valpey-Fisher Corp,
+757,13013,2011,Synovis Life Technologies Inc,[12855794]
+758,14186,2011,Gen-Probe Inc,[11352723]
+759,21186,2011,Medicis Pharmaceutical Corp,[11718527]
+760,22059,2011,Integral Systems Inc,
+761,23945,2011,Cephalon Inc,"[11319574, 11391887]"
+762,25268,2011,Ophthalmic Imaging Systems Inc,[11320360]
+763,25384,2011,Equitrac Corp,[11887149]
+764,61689,2011,AML Communications Inc,
+765,62388,2011,Vertro Inc,
+766,62826,2011,Onyx Pharmaceuticals Inc,[11697719]
+767,121053,2011,S1 Corp,[13188243]
+768,125358,2011,NaviSite Inc,
+769,127455,2011,Caliper Life Sciences Inc,[12714452]
+770,130305,2011,SAVVIS Inc,[12878502]
+771,140736,2011,Endwave Corp,[12294981]
+772,143668,2011,Magma Design Automation Inc,[12653338]
+773,266316,2011,Icagen Inc,[12274908]
+774,6110,2012,IRIS International Inc,
+775,10540,2012,Thomas & Betts Corp,[10393890]
+776,12091,2012,MEDTOX Scientific Inc,[12476251]
+777,12884,2012,Comverse Technology Inc,[11129199]
+778,24843,2012,Amylin Pharmaceuticals Inc,[11627771]
+779,29312,2012,Human Genome Sciences Inc,[11750295]
+780,31381,2012,EasyLink Services International Corp,
+781,61398,2012,LeCroy Corp,[12811151]
+782,64132,2012,World Heart Corp,[12446071]
+783,65676,2012,Intermec Inc,"[12015865, 11881708, 12605982, 11586063]"
+784,121153,2012,Ditech Networks Inc,
+785,122921,2012,Quest Software Inc,[12934290]
+786,133328,2012,Ardea Biosciences Inc,[12094306]
+787,133424,2012,Allos Therapeutics Inc,[11625630]
+788,138402,2012,OPNET Technologies Inc,[12378963]
+789,145935,2012,Callisto Pharmaceuticals Inc,[13141786]
+790,163771,2012,Kenexa Corp,
+791,165244,2012,Taleo Corp,
+792,165742,2012,Somaxon Pharmaceuticals Inc,
+793,166569,2012,BioMimetic Therapeutics Inc,
+794,176066,2012,NextWave Wireless Inc,
+795,184219,2012,Convio Inc,
+796,186473,2012,KAYAK Software Corp,
+797,264270,2012,Inhibitex Inc,[12792739]
+798,9715,2013,Symmetricom Inc,[12233800]
+799,24304,2013,Rochester Medical Corp,[11476085]
+800,25623,2013,Hi-Tech Pharmacal Co Inc,
+801,118577,2013,Life Technologies Corp,"[11226085, 11059686, 11038823, 11113420, 10439853, 11396559, 10850227, 11122964, 12918420]"
+802,121080,2013,Online Resources Corp,
+803,157954,2013,Santarus Inc,
+804,166200,2013,Molecular Insight Pharmaceuticals Inc,
+805,175111,2013,Acme Packet Inc,[13102973]
+806,175913,2013,Solta Medical Inc,[12341753]
+807,176275,2013,Obagi Medical Products Inc,
+808,176556,2013,Sourcefire Inc,
+809,176594,2013,Optimer Pharmaceuticals Inc,
+810,178531,2013,MAP Pharmaceuticals Inc,
+811,179380,2013,MAKO Surgical Corp,
+812,180030,2013,Epocrates Inc,
+813,184114,2013,Trius Therapeutics Inc,
+814,186451,2013,Responsys Inc,
+815,196855,2013,ExactTarget Inc,
