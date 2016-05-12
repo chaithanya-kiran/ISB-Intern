@@ -1,6 +1,31 @@
+3 Datasets --> SDC | Compustat | ?
+
+SDC -> merge information
+Compustat -> Financial information
+? -> ...
+
+
+4822 -> 1980-2013 
+1074 -> 1996-2013
+993 -> Industry Codes SIC's
+816 -> 1999-2013 (3 years lag)
+
+
+Product Space :
+---------------
+TNIC -> Universal Data which contains the density between any two companies for all companies.
+Assuming a company as node which is connected to other nodes(other companies) which are again interlinked in the network.
+Now the overall density_index(proximity val) of a particular company has been calculated by taking the ratio of upper triangle in this    2-d matrix(n*n matrix denpting densities between companies) to the overall possible.
+
+
+Now we are finding how the same varies in the knowledge space assuming a company looks at the other companies past 3 years data(here we are assuming it to be the patent data, how they are related) before merging or acquiring other 
+
+
 Working on Knowledge Space ...
 
 
+Knowledge Space :
+-----------------
 
 NBER DATA :
 ---------
@@ -9,7 +34,7 @@ NBER DATA :
 
 code1.py :
 
-(1) From DYNASS.csv file extracted corresponding final gvkeys of each row
+(1) From DYNASS.csv file extracted corresponding final gvkeys of each rows
 (2) Separated rows with negative pdpass(58) and their corresponding final gvkeys into negDYNASS.csv file
 (3) Created fnlDYNASS.csv file which contains all pdpass and their corresponding final gvkeys.
 (4) This wasn't much useful as we could only generate assignees for 270 companies outof 816

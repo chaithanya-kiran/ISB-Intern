@@ -35,7 +35,7 @@ data = pd.read_csv("DYNASS.csv")
 #print "pk"
 #print gvkey5_null_false
 
-
+#generating final gvkey(last present one)
 
 def generate_finalkey(row):
 	if (pd.isnull(row['gvkey5']) == False):
@@ -49,35 +49,39 @@ def generate_finalkey(row):
 	else:
 		return row["gvkey1"]
 
-final=data.apply(generate_finalkey, axis=1)
+final=data.apply(generate_finalkey, axis=1) #applying on each row to get final key
 #print final
 #print final.dtypes
 #print final.shape
 
-data["final_gvkey_val"]=final
+data["final_gvkey_val"]=final  #adding inal gvkey column to data
 #print data.shape
 #print data.head()
 #print data.columns.tolist()
 
 #print data["pdpass"]
 #print len(data["pdpass"])
+
+
+#sorting based on pdpass and taking only negative pdpass
 pdpass_sort=data.sort(["pdpass"])
 #print pdpass_sort["pdpass"].head(60)
-
 
 negative_assgn=pdpass_sort["pdpass"][0:58]
 #print negative_assgn
 
-
 neg_ass_gvkey=[]
-neg_ass_gvkey=negative_assgn.tolist()
+neg_ass_gvkey=negative_assgn.tolist()	#converting column to list
 
+
+#corresponding gvkeys for negative assg
 final_neg_gvkey=[]
 final_neg_gvkey=pdpass_sort["final_gvkey_val"][0:58].tolist()
 print neg_ass_gvkey
 print final_neg_gvkey
 
 
+#creating a dataframe and writing to a file
 df=pd.DataFrame(neg_ass_gvkey,columns=['neg_pdpass'])
 df["final_gvkey_val"]=final
 print df
@@ -89,6 +93,8 @@ print df
 df.to_csv('negDYNASS.csv')
 
 
+
+#taking only assgn columns and their corresponding final gvkeys into df1 and creating file
 final_pdpass=[]
 final_pdpass=pdpass_sort["pdpass"].tolist()
 #print final_pdpass

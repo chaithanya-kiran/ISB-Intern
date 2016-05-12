@@ -10,6 +10,7 @@ dimensions = data.shape
 #print data.head()
 
 #print data.index
+#converting column to a list
 print data.columns.tolist()
 #print data.loc[0]
 #print data.loc[0:5]
@@ -23,7 +24,6 @@ datasort=data.sort(['gvkey'])
 print datasort.head()
 print datasort.reset_index(drop=True).head()
 #print dimensions[0]
-
 
 
 
@@ -44,3 +44,4 @@ data2=pd.read_csv("DYNASS.csv")
 
 key=data.iloc[0]["gvkey"]
 #print key
+
