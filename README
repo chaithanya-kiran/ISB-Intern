@@ -334,10 +334,10 @@ To find which companies these citations belong, Join the above generated file wi
 		
 	(e) Join above file with invpat to get assignee names and numbers for all citations.
 		-> cit816harv_uniqueasg_patents_citations.csv : AsgNum->AsgNum_cit, Assignee->Assignee_cit,Patent->Patents_cit.
-		-> Select AsgNum_cit,Assignee_cit,Patents_cit,Cit_Date,Cit_Name,Citation,Assignee,AsgNum from 
-		   cit816harv_uniqueasg_patents_citations join invpat on cit816harv_uniqueasg_patents_citations.Citation=invpat.Patent
-		-> cit816harv_uniqueasg_patents_citations1.csv created with3585 rows. When the same file joined with Assignee table resulted in 
-		   only 1452 records.
+		-> Append 0 to citations-> Citation_app
+		-> Select AsgNum_cit,Assignee_cit,Patents_cit,Cit_Date,Cit_Name,Citation_app,Assignee,AsgNum from 
+		   cit816harv_uniqueasg_patents_citations join invpat on cit816harv_uniqueasg_patents_citations.Citation_app=invpat.Patent 
+		-> cit816harv_uniqueasg_patents_citations1.csv is created with 2142 rows.
  
 
 
