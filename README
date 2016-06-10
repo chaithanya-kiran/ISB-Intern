@@ -249,7 +249,9 @@ Now we have the list of all patents filed and their citations list of all 816 co
 Finding Company details of these citations:
 -----------------------------------------------------------------------------------------------------------------------------------------
 To find which companies these citations belong, Join the above generated file with invpat as citations are also patents filed by some companies
-
+	
+	cit816assgnpatents 6.34gb file generated when all citations of the above file with their AsgNum(obtained after joining with invpat based on citation and patent) are joined with invpat again 
+	based on AsgNum to get all patents(without applying dealyear filter) filed by these assignees. Since this data can't be handled process only required columns ...
 
 (1) Citations->Assigneees
 	
@@ -286,7 +288,6 @@ To find which companies these citations belong, Join the above generated file wi
 
 
 
-
 (3)	
 	
 	Instead of considering all citations from invpat_patfile_citfiles_join consider only distinct citations.
@@ -313,7 +314,8 @@ To find which companies these citations belong, Join the above generated file wi
 	(b) Join this with invpat to get patents of these citations
 		-> select * from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum=invpat.AsgNum
 		-> cit816harv_uniqueasg_invpat.csv has been created which contained around 9744221 rows.
-		-> This file was around 6.5gb hence couldnt be imported or processed further.
+		-> citations of 816 companies -> unique assignees join with invpat. 
+		-> We don't need to process all these columns further ...
 
 
 	(c) So, Instead of taking all columns from the join extract only required columns.
@@ -322,7 +324,7 @@ To find which companies these citations belong, Join the above generated file wi
 		-> cit816harv_uniqueasg_patents.csv has been created which contained 1381574 rows.
 
 
-	Patents -> Citations kavali
+	Patents -> Citations 
 
 	(d) Join above file with citation files based on patent to get corresponding citations.
 		-> Select * from cit816harv_uniqueasg_patents join citation75_99 on cit816harv_uniqueasg_patents.Patent=citation75_99.Patent
@@ -354,3 +356,34 @@ Second Step:
 		(2)cit816harv_uniqueasg_patents.csv
 	Unique Assignee Patents -> Citations
 		(3)cit816harv_uniqueasg_patents_citations.csv
+		
+		
+		
+		
+	-------------------------------------------------------------------------------------------------------------------------------
+	
+	(a)	select gvkey,Targetname,dealyear,AppYearStr,Patent,Class,Citation from invpat_patfile_citfiles_join
+		->target_cit_temp.csv with 196900 rows
+	
+	(b)	select gvkey,targetname,dealyear,target_cit_temp.AppYearStr,target_cit_temp.Patent,Citation_app,Assignee,AsgNum from target_cit_temp join invpat on target_cit_temp.Citation_app=invpat.Patent->target_cit_assignee_temp
+		->target_cit_assignee_temp.csv with 97716 rows (blanks 7953)
+	
+	(c)	select distinct gvkey,targetname,dealyear,target_cit_temp.AppYearStr,target_cit_temp.Patent,Citation_app,Assignee,AsgNum from target_cit_temp join invpat on target_cit_temp.Citation_app=invpat.Patent->target_cit_assignee_temp
+		->target_cit_assignee_temp_distinct.csv with 14153 rows and after removing duplicates(python) 
+		->target_cit_assignee_temp_distinct_null with 12221 rows renamed and created final file1
+		->file1 : target_pat_cit_assignee
+	
+	(d)	select distinct AsgNum,dealyear from target_cit_assignee_temp_distinct_null
+		->unique_Assignee_number.csv with 2982 rows
+		
+	(e)	select distinct gvkey,Targetname,dealyear,Patent,Class from target_cit_temp
+		->file3: target_pat_class
+		
+	(f)	select AsgNum_cit,Assignee,Patent from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum_cit=invpat.AsgNum 
+		   where cit816harv_uniqueasg.dealyear-invpat.AppYearStr<=3 and cit816harv_uniqueasg.dealyear-invpat.AppYearStr>=1
+		->file4.csv with 1381574 rows
+		
+	(g)	select AsgNum_cit,Assignee,Patent,dealyear,AppYearStr from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum_cit=invpat.AsgNum 
+		   where cit816harv_uniqueasg.dealyear-invpat.AppYearStr<=3 and cit816harv_uniqueasg.dealyear-invpat.AppYearStr>=1
+		->cit816harv_uniqueasg_patents.csv with 1381574
+		->Modified previous cit816harv_uniqueasg_patents by adding dealyear and AppYearStr
