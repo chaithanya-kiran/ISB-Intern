@@ -231,7 +231,7 @@ Joining a_invpat_patfile_join file and citation files based on patents:
 
 	(a) Select * from citation75_99 join a_invpat_patfile_join on a_invpat_patfile_join.Patappend=citation75_99.Patent
 	    union
-		Select * from  citation00_10 join a_invpat_patfile_join on a_invpat_patfile_join.Patappend=citation00_10.Patent 
+	    Select * from  citation00_10 join a_invpat_patfile_join on a_invpat_patfile_join.Patappend=citation00_10.Patent 
 
 	(b) 196900 records returned after joining these two files.
 	(c) Created invpat_patfile_citfiles_join file.(This file contains patent gvkey invpat and their citation details.)
@@ -249,7 +249,9 @@ Now we have the list of all patents filed and their citations list of all 816 co
 Finding Company details of these citations:
 -----------------------------------------------------------------------------------------------------------------------------------------
 To find which companies these citations belong, Join the above generated file with invpat as citations are also patents filed by some companies
-
+	
+	cit816assgnpatents 6.34gb file generated when all citations of the above file with their AsgNum(obtained after joining with invpat based on citation and patent) are joined with invpat again 
+	based on AsgNum to get all patents(without applying dealyear filter) filed by these assignees. Since this data can't be handled process only required columns ...
 
 (1) Citations->Assigneees
 	
@@ -286,7 +288,6 @@ To find which companies these citations belong, Join the above generated file wi
 
 
 
-
 (3)	
 	
 	Instead of considering all citations from invpat_patfile_citfiles_join consider only distinct citations.
@@ -313,7 +314,8 @@ To find which companies these citations belong, Join the above generated file wi
 	(b) Join this with invpat to get patents of these citations
 		-> select * from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum=invpat.AsgNum
 		-> cit816harv_uniqueasg_invpat.csv has been created which contained around 9744221 rows.
-		-> This file was around 6.5gb hence couldnt be imported or processed further.
+		-> citations of 816 companies -> unique assignees join with invpat. 
+		-> We don't need to process all these columns further ...
 
 
 	(c) So, Instead of taking all columns from the join extract only required columns.
@@ -322,7 +324,7 @@ To find which companies these citations belong, Join the above generated file wi
 		-> cit816harv_uniqueasg_patents.csv has been created which contained 1381574 rows.
 
 
-	Patents -> Citations kavali
+	Patents -> Citations 
 
 	(d) Join above file with citation files based on patent to get corresponding citations.
 		-> Select * from cit816harv_uniqueasg_patents join citation75_99 on cit816harv_uniqueasg_patents.Patent=citation75_99.Patent
@@ -354,3 +356,82 @@ Second Step:
 		(2)cit816harv_uniqueasg_patents.csv
 	Unique Assignee Patents -> Citations
 		(3)cit816harv_uniqueasg_patents_citations.csv
+		
+		
+		
+		
+	-------------------------------------------------------------------------------------------------------------------------------
+	To extract required final four files:
+	
+	(a)	select gvkey,Targetname,dealyear,AppYearStr,Patent,Class,Citation from invpat_patfile_citfiles_join
+		->target_cit_temp.csv with 196900 rows
+	
+	(b)	select gvkey,targetname,dealyear,target_cit_temp.AppYearStr,target_cit_temp.Patent,Citation_app,Assignee,AsgNum from target_cit_temp join invpat on target_cit_temp.Citation_app=invpat.Patent->target_cit_assignee_temp
+		->target_cit_assignee_temp.csv with 97716 rows (blanks 7953)
+	
+	(c)	select distinct gvkey,targetname,dealyear,target_cit_temp.AppYearStr,target_cit_temp.Patent,Citation_app,Assignee,AsgNum from target_cit_temp join invpat on target_cit_temp.Citation_app=invpat.Patent->target_cit_assignee_temp
+		->target_cit_assignee_temp_distinct.csv with 14153 rows and after removing duplicates(python) 
+		->target_cit_assignee_temp_distinct_null with 12221 rows renamed and created final file1
+		->file1 : target_pat_cit_assignee
+	
+	(d)	select distinct AsgNum,dealyear from target_cit_assignee_temp_distinct_null
+		->unique_Assignee_number.csv with 2982 rows
+		
+	(e)	select distinct gvkey,Targetname,dealyear,Patent,Class from target_cit_temp
+		->file3: target_pat_class
+		
+	(f)	select AsgNum_cit,Assignee,Patent from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum_cit=invpat.AsgNum 
+		   where cit816harv_uniqueasg.dealyear-invpat.AppYearStr<=3 and cit816harv_uniqueasg.dealyear-invpat.AppYearStr>=1
+		->file4.csv with 1381574 rows
+		
+	(g)	select AsgNum_cit,Assignee,Patent,dealyear,AppYearStr from cit816harv_uniqueasg join invpat on cit816harv_uniqueasg.AsgNum_cit=invpat.AsgNum 
+		   where cit816harv_uniqueasg.dealyear-invpat.AppYearStr<=3 and cit816harv_uniqueasg.dealyear-invpat.AppYearStr>=1
+		->cit816harv_uniqueasg_patents.csv with 1381574
+		->Modified previous cit816harv_uniqueasg_patents by adding dealyear and AppYearStr
+		
+	(h)	Select * from cit816harv_uniqueasg_patents join citation75_99 on cit816harv_uniqueasg_patents.Patent=citation75_99.Patent
+		union
+		Select * from cit816harv_uniqueasg_patents join citation00_10 on cit816harv_uniqueasg_patents.Patent=citation00_10.Patent
+		->cit816harv_uniqueasg_patents_citations_file2temp.csv created with 5270337 records.
+		->Selected required columns from this file and created cit816harv_uniqueasg_patents_citations_file2.csv
+		
+	(i)	select asgnum_cit,cit816harv_uniqueasg_patents_citations_file2.assignee,cit816harv_uniqueasg_patents_citations_file2.patent,dealyear,cit816harv_uniqueasg_patents_citations_file2.appyearstr,citation,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.citation=invpat.patent
+		->unqasg_pat_cit_asg_temp.csv created with 12629189 records.
+		select distinct asgnum_cit,cit816harv_uniqueasg_patents_citations_file2.assignee,cit816harv_uniqueasg_patents_citations_file2.patent,dealyear,cit816harv_uniqueasg_patents_citations_file2.appyearstr,citation,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.citation=invpat.patent
+		-> Created unqasg_pat_cit_asg_distinctfile2. Distinct records are 5071238
+		
+Need to modify all the above files:
+Some of the Citation names are of type A;B when they are exported to csv earlier they got separated into different columns. Previously as we joined citation tables with file some of the citations got different values due to column shift.
+So modify all previous files accordingly:
+	Select * from a_invpat_patfile_join join citation75_99 on a_invpat_patfile_join.Patappend=citation75_99.Patent 
+	union
+	Select * from a_invpat_patfile_join join citation00_10 on a_invpat_patfile_join.Patappend=citation00_10.Patent
+	invpat_patfile_citfiles_join1 with 196900 records.
+	
+	
+	(a)	select gvkey,Targetname,dealyear,AppYearStr,a_invpat_patfile_join.Patent,Class,Citation from a_invpat_patfile_join join citation75_99 on a_invpat_patfile_join.Patappend=citation75_99.Patent 
+		union
+		select gvkey,Targetname,dealyear,AppYearStr,a_invpat_patfile_join.Patent,Class,Citation from a_invpat_patfile_join join citation00_10 on a_invpat_patfile_join.Patappend=citation00_10.Patent
+		->target_cit_temp1 with 58519 records.
+	
+	(b)	target_cit_assignee_temp with 132853 records
+	(c)	->target_cit_assignee_temp_distinct with 53743 records and after removing nulls(python) target_cit_assignee_temp_distinct_null same as
+		->file1 : target_pat_cit_assignee with 46341 records
+	(d)	unique_Assignee_number with 9590 records.
+	(e)	file3: target_pat_class with 2417 records.
+	(f)	Modified cit816harvard: 196900, after removing null values(python): 196459, 
+			 cit816harvard1: 460031
+			 cit816harvard1remdup: 53636
+			 cit816harv: 46239
+			 cit816harv_uniqueasg: 9576
+			file4: 4451836
+	(g)	cit816harv_uniqueasg_patents with 4451836 records.
+	(h)	Select AsgNum_cit,Assignee,cit816harv_uniqueasg_patents.Patent,dealyear,AppYearStr,Citation from cit816harv_uniqueasg_patents join citation75_99 on cit816harv_uniqueasg_patents.Patent=citation75_99.Patent
+		union
+		Select AsgNum_cit,Assignee,cit816harv_uniqueasg_patents.Patent,dealyear,AppYearStr,Citation from cit816harv_uniqueasg_patents join citation00_10 on cit816harv_uniqueasg_patents.Patent=citation00_10.Patent
+		->cit816harv_uniqueasg_patents_citations_file2 with 22874946 records. Old file renamed as cit816harv_uniqueasg_patents_citations_file2_old_b4change incase of further use.
+	(i)	select cit816harv_uniqueasg_patents_citations_file2.field1,cit816harv_uniqueasg_patents_citations_file2.field2,cit816harv_uniqueasg_patents_citations_file2.field3,cit816harv_uniqueasg_patents_citations_file2.field4,cit816harv_uniqueasg_patents_citations_file2.field5,cit816harv_uniqueasg_patents_citations_file2.field6,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.field6=invpat.Patent
+		->unqasg_pat_cit_asg_temp created with 43503194 records.
+		select distinct cit816harv_uniqueasg_patents_citations_file2.field1,cit816harv_uniqueasg_patents_citations_file2.field2,cit816harv_uniqueasg_patents_citations_file2.field3,cit816harv_uniqueasg_patents_citations_file2.field4,cit816harv_uniqueasg_patents_citations_file2.field5,cit816harv_uniqueasg_patents_citations_file2.field6,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.field6=invpat.Patent
+		->unqasg_pat_cit_asg_distinctfile2.csv replaced with 17092251 records finally.
+	
