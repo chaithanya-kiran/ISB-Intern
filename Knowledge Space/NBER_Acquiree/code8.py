@@ -15,20 +15,22 @@ final=[]
 row_number=0
 for index,row in dataacq.iterrows():
 #	print row_number
+	temp=[]
 	row_number=row_number+1
 	if row["gvkey_a"] in gvkey5:
-		final.append(data["pdpass"][data["gvkey5"]==row["gvkey_a"]].tolist())
-	elif row["gvkey_a"] in gvkey4:
-		final.append(data["pdpass"][data["gvkey4"]==row["gvkey_a"]].tolist())
-	elif row["gvkey_a"] in gvkey3:
-		final.append(data["pdpass"][data["gvkey3"]==row["gvkey_a"]].tolist())
-	elif row["gvkey_a"] in gvkey2:
-		final.append(data["pdpass"][data["gvkey2"]==row["gvkey_a"]].tolist())
-	elif row["gvkey_a"] in gvkey1:
-		final.append(data["pdpass"][data["gvkey1"]==row["gvkey_a"]].tolist())
-	else:
+		temp.extend(data["pdpass"][data["gvkey5"]==row["gvkey_a"]].tolist())
+	if row["gvkey_a"] in gvkey4:
+		temp.extend(data["pdpass"][data["gvkey4"]==row["gvkey_a"]].tolist())
+	if row["gvkey_a"] in gvkey3:
+		temp.extend(data["pdpass"][data["gvkey3"]==row["gvkey_a"]].tolist())
+	if row["gvkey_a"] in gvkey2:
+		temp.extend(data["pdpass"][data["gvkey2"]==row["gvkey_a"]].tolist())
+	if row["gvkey_a"] in gvkey1:
+		temp.extend(data["pdpass"][data["gvkey1"]==row["gvkey_a"]].tolist())
+	if not temp:
 		final.append(None)
-
+	else:
+		final.append(temp)
 print final
 #print len(final)
 #print type(final)

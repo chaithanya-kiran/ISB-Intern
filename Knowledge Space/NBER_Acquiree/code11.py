@@ -34,7 +34,7 @@ row_count=0
 temp=0
 #print data["patent_count"]
 for index,row in data.iterrows():
-	#print row_count
+	print row_count
 	row_count=row_count+1	
 	var=int(row["patent_count"])
 #	print type(int(var))
@@ -63,8 +63,8 @@ singlelist=[]
 temp=0
 for ck in patent_list:
 	
-	#print temp
-	#temp=temp+1
+	print temp
+	temp=temp+1
 	if pd.isnull(ck):
 		singlelist.append(None)
 	else:
