@@ -430,8 +430,104 @@ So modify all previous files accordingly:
 		union
 		Select AsgNum_cit,Assignee,cit816harv_uniqueasg_patents.Patent,dealyear,AppYearStr,Citation from cit816harv_uniqueasg_patents join citation00_10 on cit816harv_uniqueasg_patents.Patent=citation00_10.Patent
 		->cit816harv_uniqueasg_patents_citations_file2 with 22874946 records. Old file renamed as cit816harv_uniqueasg_patents_citations_file2_old_b4change incase of further use.
+		->cit816harv_uniqueasg_patents_citations_file2 distinct also gave same number of records. After removing nulls 22874934.  
 	(i)	select cit816harv_uniqueasg_patents_citations_file2.field1,cit816harv_uniqueasg_patents_citations_file2.field2,cit816harv_uniqueasg_patents_citations_file2.field3,cit816harv_uniqueasg_patents_citations_file2.field4,cit816harv_uniqueasg_patents_citations_file2.field5,cit816harv_uniqueasg_patents_citations_file2.field6,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.field6=invpat.Patent
 		->unqasg_pat_cit_asg_temp created with 43503194 records.
 		select distinct cit816harv_uniqueasg_patents_citations_file2.field1,cit816harv_uniqueasg_patents_citations_file2.field2,cit816harv_uniqueasg_patents_citations_file2.field3,cit816harv_uniqueasg_patents_citations_file2.field4,cit816harv_uniqueasg_patents_citations_file2.field5,cit816harv_uniqueasg_patents_citations_file2.field6,invpat.Assignee,invpat.AsgNum from cit816harv_uniqueasg_patents_citations_file2 join invpat on cit816harv_uniqueasg_patents_citations_file2.field6=invpat.Patent
 		->unqasg_pat_cit_asg_distinctfile2.csv replaced with 17092251 records finally.
+		
+		
+	Final Files:
+	(a)	-> Select gvkey and citation from invpat_patfile_citfiles_join1. invpat_patfile_citfiles_join_gvkey_cit
+		-> Total 196900 after removing blanks 196460.
+		-> Join with invpat(citation and patent) and get asgnum of these citations.
+		-> Total 460031, distinct 27819.
+		
+		-> Select gvkey,patent and citation from invpat_patfile_citfiles_join1. invpat_patfile_citfiles_join_gvkey_pat_cit.
+		-> Total 196900 after removing blanks 196460.
+		-> Join with invpat(citation and patent) and get asgnum of these citations.
+		-> Total 460031, distinct 53636. After removing blanks 46239. Among these only 265 distinct gvkeys exist.
+		-> invpat_patfile_citfiles_join_gvkey_pat_cit_asgnum_dist
+		
+		-> Processing final first file: invpat_patfile_citfiles_join_gvkey_pat_cit_asgnum_dist
+		-> select gvkey,Citation,AsgNum from invpat_patfile_citfiles_join_gvkey_pat_cit_asgnum_dist
+		-> final_file1 with 46239 records.
+		
+	(b)	-> From unqasg_pat_cit_asg_distinctfile2 with 17092251 records remove nulls(16001760) and select only field1,filed2,asgnum from the above file.
+		-> final_file2 with 16001760 to be processed.
+		
+		Score calculation needs to be done using these two files for targets.
+		
 	
+	NBER Acqiree:
+	
+		Before we took the last matched gvkey assuming that it would be the final gvkey of that company. As we proceeded assuming the same we didn't encounter any problem with target as after the acquisition the target gvkey would be changed permanantly and there would be no further change as we are considering only during the deal year.
+		But, Incase of acquirers as gvkeys vary when we joined with invpat as done in targets for the first step while joining with Harvard and applying the filter no rwcords were returned.
+		Inorder to check this we need to consider all gvkeys and modify the previous codes in knowledge space accordingly.
+		Modify codes 8,9,10,11 and their output files accordingly.
+		
+	Harvard Acquiree:
+		Repeat the same steps as in target for acquiree also. Naming the files same as target files for convenience. 
+		(a) Acquirer_Assignees_Patent_Expand_Final.csv with 588821 records. Remove nulls from the above file 588814
+		    -> Acquirer.csv
+		(b) acq_invpat_patfile_join with 280341 and acq_invpat_patfile_cit_join with 4043506.
+		(c) acq_target_cit_temp with 1317044 records.
+		    acq_target_cit_assignee_temp with 3076749 records. Among these distint: 1227184 and after removing nulls 1128301.
+		    acq_unique_Assignee_number with 85251 records.
+		    acq_target_pat_class with 96340 records.
+		    acq_cit816harvard with 4043506 records.
+		    acq_cit816harv is same as acq_target_cit_assignee_temp_dist_null.
+		    acq_cit816harv_uniqueasg with 85251 records.
+		(d) select acq_cit816harv_uniqueasg.AsgNum as AsgNum_Unq,invpat.Patent as Patent from acq_cit816harv_uniqueasg join invpat on acq_cit816harv_uniqueasg.AsgNum=invpat.AsgNum where acq_cit816harv_uniqueasg.dealyear-invpat.AppYearStr<=3 and acq_cit816harv_uniqueasg.dealyear-invpat.AppYearStr>=1
+		    -> acq_cit816harv_uniqueasg_patents with 7699554 records.
+		(e) select AsgNum_Unq,acq_cit816harv_uniqueasg_patents.Patent as Patent,Citation from acq_cit816harv_uniqueasg_patents join citation75_99 on acq_cit816harv_uniqueasg_patents.Patent=citation75_99.Patent
+  		    union
+		    select AsgNum_Unq,acq_cit816harv_uniqueasg_patents.Patent as Patent,Citation from acq_cit816harv_uniqueasg_patents join citation00_10 on acq_cit816harv_uniqueasg_patents.Patent=citation00_10.Patent
+		    -> acq_cit816harv_uniqueasg_patents_citations with 19368782 records.
+		(f) select distinct AsgNUm_Unq,acq_cit816harv_uniqueasg_patents_citations.Patent as Patent,Citation,invpat.AsgNum from acq_cit816harv_uniqueasg_patents_citations join invpat on  acq_cit816harv_uniqueasg_patents_citations.Citation=invpat.Patent
+		    -> acq_cit816harv_uniqueasg_patents_citations_asgnum with 14316976 records.
+		    -> final_file2 -> only asg,cit,asg from above file remove patent and also remove nulls
+		    -> acq_final_file2 with 13152426 records.
+		(g) -> acq_invpat_patfile_citfiles_join_gvkey_pat_cit -> 4043506
+		    -> acq_invpat_patfile_citfiles_join_gvkey_pat_cit_distinct -> 1141081
+		    -> acq_invpat_patfile_citfiles_join_gvkey_pat_cit_asgnum_distinct -> 1063842. After removing nulls 980877. Among these only 185 distinct gvkeys are present.
+		    acq_final_file1
+		    Acquirer data varies differently based on dealyear. (DIstinct gvkey along with dealyear 257. Only distinct gvkey 199).
+		    -> acq_invpat_patfile_cit_join_gvkey_dealyear_dist -> 243 gvkey,dealyear.
+		    -> acq_invpat_patfile_citfiles_join_gvkey_dealyear_pat_cit_distinct -> 1317044.
+		    -> acq_invpat_patfile_citfiles_join_gvkey_dealyear_pat_cit_asgnum_distinct -> 1227184 and after removing nulls 1128301. In this file dist gvkey,dealyear:243. 
+		    acq_final_file1_withdealyear
+
+ 
+ 	
+	Score Calculation Problem:
+	
+	In Product Space, density was calculated between gvkey and gvkey. Now inorder to compare both Knowledge Space and Product Space, the final scores should be in terms of gvkeys in the knowledge space.
+	
+	Converting AsgNum -> gvkeys ???
+	For this we need to find a relation on joining NBER with HARVARD.
+	
+	(a)	Join invpat and PAT76_06 to get relation between asgnum and pdpassgn.
+		-> Select pdpass and patent from PAT76_06 and remove nulls -> NBER_Pat_PDPAssgn.
+		-> Append 0 to patent.
+		-> From invpat select asgnum,assignee,patent invpat_Unq_Pat_Asg_WithoutNULL_sortbyAsg and remove nulls.
+		-> Join both these files invpat_pat76_06_join.
+		-> Now join above file with DYNASS to find gvkeys of asgnum. invpat_pat76_06_join_DYNASS. Only 16193 are distinct asgnum among these.
+		
+		To check how many of our final files asgnum have gvkeys:
+		-> Join final_file1 with invpat_pat76_06_join_DYNASS. Only 2292 AsgNum out of 6245 distinct are having gvkeys.
+		-> final_file2 distinct field1 -> 3244 and distinct AsgNum -> 108268.
+		
+		Here, the problem of single gvkey  -> Multiple AsgNum and 
+				     single AsgNum -> Multiple gvkeys also exist.
+		How to resolve this?
+		
+	(b)	Find all connected companies gvkeys of 267 targets and 257 acquiree's uniquelist from tnic data.
+		-> Modified codes in acq to get required data.
+		-> All 267+257 unique list -> 8207.
+		-> Connectedgvkeys.csv from modifed code8.py
+		   Connected_gvkeys_Assignees.csv from modifed code9.py
+		   Connected_gvkeys_Assignees_Expand.csv from modifed code10.py
+		-> Join above file with invpat_pat76_06_join.
+		   Connected_gvkeys_AsgNum -> 813199
+		   Connected_gvkeys_AsgNum_distinct -> 10299. Among these there are only 3324 are distinct gvkeys out of 8207.
