@@ -1,7 +1,7 @@
 import pandas as pd 
 import json
 
-data = pd.read_csv("Acquirer_Assignees.csv")
+data = pd.read_csv("Connected_gvkeys_Assignees.csv")
 data76_06 = pd.read_csv("PAT76_06_assg.csv", low_memory=False)
 
 dataassgnlist=data["assignee"].tolist()
@@ -96,4 +96,4 @@ df['assignee']=singlelist
 print df
 
 df=df.drop('Unnamed: 0',1)
-df.to_csv('Acquirer_Assignees_Expand.csv')
+df.to_csv('Connected_gvkeys_Assignees_Expand.csv')

@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-data=pd.read_csv('Acquirer_Assignees_Patent_Expand.csv')
+data=pd.read_csv('Connected_gvkeys_Assignees_Patent_Expand.csv')
 df=pd.DataFrame(columns=data.columns)
 
 print data.shape
@@ -84,4 +84,4 @@ df.drop('patent_count',1)
 
 print df.shape
 print df.head(20)
-df.to_csv("Acquirer_Assignees_Patent_Expand_Final.csv")	
+df.to_csv("Connected_gvkeys_Assignees_Patent_Expand.csv")	

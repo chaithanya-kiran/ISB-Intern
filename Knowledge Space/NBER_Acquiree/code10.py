@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-data = pd.read_csv("Acquirer_Assignees_Expand.csv")
+data = pd.read_csv("Connected_gvkeys_Assignees_Expand.csv")
 
 data76_06 = pd.read_csv("PAT76_06_assg.csv", low_memory=False)
 data76_06assgnlist=data76_06["pdpass"].tolist()
@@ -45,4 +45,4 @@ patent_count = data.apply(generate_patent_count, axis=1)
 data["patent_count"]=patent_count
 data['patents']=patent
 
-data.to_csv('Acquirer_Assignees_Patent_Expand.csv')
+data.to_csv('Connected_gvkeys_Assignees_Patent_Expand.csv')
