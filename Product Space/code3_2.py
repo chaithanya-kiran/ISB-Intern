@@ -3,8 +3,8 @@ start_time_total=time.time()
 import pandas as pd
 import sys 
 data=pd.read_csv('tnic_all years_data.csv')
-data816=pd.read_csv('816_target_gvkeys.csv')
-data816=data816[0:5]
+data816=pd.read_csv('267_target_gvkeys.csv')
+data816=data816[200:201]
 
 dataorig=data
 
@@ -18,12 +18,13 @@ count816=1
 for gvkeys in data816gvkeylist:
 	start_time = time.time()
 
-	with open('Target Density Files/{}_ps.txt'.format(gvkeys), 'w') as output:
+	with open('Target Density Files last60/{}_ps.txt'.format(gvkeys), 'w') as output:
 #		output.write("%d %s\n\n"%(data816.loc[count816-1]["gvkey"],data816.loc[count816-1]["Target name"]))
 
+		print gvkeys
 		data=dataorig
-	#	print "\n\ncompany",
-	#	print count816,
+		print "\n\ncompany",
+		print count816,
 		count816=count816+1
 
 	#	print gvkeys,
@@ -42,8 +43,8 @@ for gvkeys in data816gvkeylist:
 		uniquelist.extend(df['gvkey_2'].tolist())
 		uniquelist=list(set(uniquelist))
 		uniqlength=len(uniquelist)
-	#	print "uniqlength : ",
-	#	print uniqlength
+		print "uniqlength : ",
+		print uniqlength
 		uniquelist.sort()
 	#	print uniquelist
 
@@ -100,9 +101,9 @@ for gvkeys in data816gvkeylist:
 
 				val=(val1+val2+val3)/avg_count if avg_count>0 else 0
 				fnlsum=fnlsum+val
-				print key2,
-				print key1,
-				print val 
+#				print key2,
+#				print key1,
+#				print val 
 				if val!=0:
 					output.write("%d %d %.10f\n"%(key2,key1,val))
 			temp=temp+1

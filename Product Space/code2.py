@@ -1,10 +1,14 @@
+import time
+start_time = time.time()
+
+
 #trying to optimize
 import pandas as pd
 import sys 
 data=pd.read_csv('tnic_all years_data.csv')
 data816=pd.read_csv('816_target_gvkeys.csv')
 
-print data.shape
+#print data.shape
 
 data816gvkeylist=data816["gvkey"].tolist()
 
@@ -23,12 +27,13 @@ uniquelist=[2598]
 uniquelist.extend(df['gvkey_2'].tolist())
 uniquelist=list(set(uniquelist))
 uniqlength=len(uniquelist)
+print "uniquelist length : ",
 print uniqlength
 uniquelist.sort()
 print uniquelist
 
 for item in uniquelist:
-	print item
+#	print item
 	df1=data[data["gvkey_1"]==item]
 	df2=data[data["gvkey_2"]==item]
 	collist=list(df2)
@@ -41,7 +46,7 @@ for item in uniquelist:
 df.drop_duplicates()
 
 data=df
-print data
+#print data
 
 data.to_csv("check.csv")
 #	dealyear=1999
@@ -64,8 +69,8 @@ temp=1
 fnlsum=0
 count=0
 for key1 in uniquelist[0:]:	
-	print key1,
-	print count
+#	print key1,
+#	print count
 	count=count+1
 	key1list=[]
 #	print uniquelist
@@ -103,18 +108,21 @@ for key1 in uniquelist[0:]:
 		
 
 		val=(val1+val2+val3)/avg_count if avg_count>0 else 0
-		print key2,
-		print val1,
-		print val2,
-		print val3,
-		print val
+	#	print key2,
+	#	print val1,
+	#	print val2,
+	#	print val3,
+	#	print val
 		key1list.append(val)
 	temp=temp+1
 #	print key1list
 #	print len(key1list)
 	fnlsum=fnlsum+sum(key1list)
-	print "key1rowsum: "
-	print fnlsum	
+#	print "key1rowsum: "
+#	print fnlsum	
 print fnlsum
 density=(fnlsum*2)/(uniqlength*uniqlength-1)
 print density
+
+
+print(" %s seconds" % (time.time()-start_time))
