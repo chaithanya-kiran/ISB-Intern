@@ -531,3 +531,13 @@ So modify all previous files accordingly:
 		-> Join above file with invpat_pat76_06_join.
 		   Connected_gvkeys_AsgNum -> 813199
 		   Connected_gvkeys_AsgNum_distinct -> 10299. Among these there are only 3324 are distinct gvkeys out of 8207.
+		   
+	(c)	-> From codedyn.py expanded DYNASS vertically(67290) and after removing nulls(16083). DYNASS_expand.csv.
+		-> Join above file with invpat_pat_76_06_join. DYNASS_expand_join_invpat_pat76_06_join (1506972).
+		-> Selected distinct AsgNum from final_file1 (final_file1_dist_asgnum -> 6245).
+		-> Selected distinct asgnum,beginyear,gvkey from DYNASS_expand_join_invpat_pat76_06_join. (DYNASS_expand_join_invpat_pat76_06_join_asg_byr_gvkey -> 22571)
+		-> From code1.py single gvkey has been mapped to all asgnum in final_file1_dist_asgnum, based on sorting by beginyear or endyear and taking the first occuring gvkey. Created final_file1_dist_asgnum_gvkey. For checking purpose consider the case where AsgNum: A000010053918.
+		-> Joined invpat_pat76_06_join_DYNASS with final_file1_dist_asgnum  to get all possible gvkeys of asgnum and created final_file1_dist_asgnum_allgvkeys with 9116 records.
+		-> Still, Consider the case where AsgNum="H000000000024". In this case for this asgnum there are 19 different pdpass for the same AsgNum which further gives multiple gvkeys to the same AsgNum.
+		-> Even in the final_file1_dist_asgnum_gvkey containing single gvkey based on the earliest occurrence the same problem exists i.e., between same begin year and endyear there are multiple gvkeys, though we took the first one. 
+		Couldn't find one-one correspondende!
