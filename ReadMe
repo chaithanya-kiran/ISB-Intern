@@ -1,0 +1,67 @@
+Predictive Analysis of Market Synergies and Competition in Mergers and Acquisitions.
+
+(1) Statistical Analysis of Mergers and Acquisitions data from different financial databases in last two decades to determine the motive behind a deal.
+(2) Analyzing the product space behavior and knowledge space behavior of different Targets and Acquirers by creating their product proximity networks and measuring the similarity between them.
+(3) Applying knowledge management strategies by employing network analyses, constructed knowledge space networks of firms considering patents filed as the underlying knowledge.
+
+
+Definition:
+(1) Mergers and acquisitions (M&A) is a general term that refers to the consolidation of companies or assets. Merger means a combination of two companies to form a new company, while an acquisition is the purchase of one company by another in which no new company is formed.
+
+Various Factors:
+(1) Financial synergy for lower cost of capital
+(2) Diversification for higher growth products or markets
+(3) To increase market share and positioning giving broader market access
+
+
+
+Example: company related
+
+
+
+Product Space:
+(1) The Product Space(graph type) is a network that formalizes the idea of relatedness between products traded in the global economy. There exists a number of factors that can describe the relatedness between a pair of products like those require similar institutions, capital, infrastructure, technology, etc., they are likely to be produced in tandem.
+(2) The Product Space quantifies the relatedness of products with a measure called proximity index.
+
+
+
+Hoberg-Phillips Industry Classification:
+
+(1) The Hoberg and Phillips Text Based Industry Classifications have a spatial representation. All firms have a location in a product market space shaped as a unit sphere. Competitive product markets are areas of the sphere where many firms are located. Concentrated areas are sparsely populated. 
+(2) Some regions of the product space have no firms residing there, as some text descriptions of products would describe products with no demand, such as the word combination: "eggs", "paint" and "gardening".
+
+(1) Text-based Network Industry Classifications (TNIC)
+(2) Text-based Fixed Industry Classifications (FIC) based on SIC
+
+
+We chose TNIC ...
+(1) (TNIC),which is a network way of identifying competitors to each firm.
+(2) Competitors are firms residing in close proximity in product space to each firm based on a continuous measure of similarity.
+(3) Another key benefit of TNIC industries is that industry composition is updated annually, and our own research indicates that the product market space itself thus dynamically changes over time. As a result, static fixed-location FIC classifications miss out on much of the picture.
+
+
+ Standard Industrial Classification code system for the United States.
+
+TNIC Data:
+(1) Year-by-Year set of product similarity measures between two firms
+(2) This data is based on web crawling and text parsing algorithms that process the text in the business descriptions of   10-K annual filings on the SEC Edgar website from 1996 to 2011. 
+(3)  A 10-K is a comprehensive summary report of a company's performance that must be submitted annually to the Securities and Exchange Commission. Firms describe the significant products they offer to the market, and these descriptions must also be updated and representative of the current fiscal year of the 10-K.
+(4) Firms are more likely to enter mergers with firms whose language describing their assets is similar. 
+
+proximity density calculation
+        We calculate our firm-by-firm pairwise similarity scores by parsing the product descriptions from the firm 10Ks and forming word vectors for each firm to compute continuous measures of product similarity for every pair of firms in our sample in each year (a pairwise similarity matrix). This is done using the cosine similarity method. For any two firms i and j, we thus have a product similarity, which is a real number in the interval [0,1] describing how similar the words used by firms i and j are. 
+
+NOTE:
+(1)  A higher score indicates that the text of the two firms' business descriptions has more common vocabulary than do a pair of firms with a lower score.
+(2) To construct an industry control (as discussed in papers above) should compute averages for each firm over all of its rivals.
+
+
+As of now we created networks for each firm in product space and found its density value(industry control).
+
+
+
+
+Knowledge Space:
+(1) We looked at the product space network behavior which is based on the the similarity between their product descriptions.
+Basically a text based approach. Now, We create similar networks in Knowledge Space. 
+(2) Apart from the product descriptions there has to be something that drives a deal(acquisition or merging two companies). (3) Considering that patents filed by a company plays a major role in this process and considering them to be the crucial factor in deciding the deal we are looking at how these patents and their forward and backward citations are linked. (4 (4) (4) Assuming a company looks at the other companies past 3 years data(here we are assuming it to be the patent data, we are considering the patents filed in the past three years prior to the deal) before merging or acquiring other.
